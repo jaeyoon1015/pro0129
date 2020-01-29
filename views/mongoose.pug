@@ -1,0 +1,16 @@
+doctype html
+html 
+    head
+        meta(charset='utf-8')
+        title 몽구스 서버
+        
+        table#user-list
+            thead   
+                tr  
+                    th 아이디
+                    th 나이
+            tbody
+                for user in users   
+                    tr
+                        td = user._id
+                        td = user.age
